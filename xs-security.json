@@ -1,0 +1,44 @@
+{
+  "xsappname": "prapproval",
+  "scopes": [
+    {
+      "name": "$XSAPPNAME.ModuleLeadRole",
+      "description": "ModuleLeadRole"
+    },
+    {
+      "name": "$XSAPPNAME.RORole",
+      "description": "RORole"
+    },
+    {
+      "name": "$XSAPPNAME.HODRole",
+      "description": "HODRole"
+    }
+  ],
+  "attributes": [],
+  "role-templates": [
+    {
+      "name": "ModuleLeadRole",
+      "description": "generated",
+      "scope-references": [
+        "$XSAPPNAME.ModuleLeadRole"
+      ],
+      "attribute-references": []
+    },
+    {
+      "name": "RORole",
+      "description": "generated",
+      "scope-references": [
+        "$XSAPPNAME.RORole"
+      ],
+      "attribute-references": []
+    },
+    {
+      "name": "HODRole",
+      "description": "generated",
+      "scope-references": [
+        "$XSAPPNAME.HODRole"
+      ],
+      "attribute-references": []
+    }
+  ]
+}

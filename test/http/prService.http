@@ -1,0 +1,70 @@
+@server=http://localhost:4004
+@username=Durga
+@password=Durgayuva
+
+
+### prtableSet
+# @name prtableSet_GET
+GET {{server}}/odata/v4/pr/prtableSet
+Authorization: Basic {{username}}:{{password}}
+
+
+### prtableSet
+# @name prtableSet_POST
+POST {{server}}/odata/v4/pr/prtableSet
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+{
+  "ID": "17040384-3c14-473b-9ec4-cb2de7ee1b74",
+  "prno": 1234657890,
+  "item_no": "item_no-17040384",
+  "prvalue":5000,
+  "doc_type": "doc_type-17040384",
+  "requestor": "requestor-17040384",
+  "material": "l-17040384",
+  "qty": 1,
+  "plant": "t-17040384",
+  "pur_org": "g-17040384",
+  "rel_sgr": "r-17040384",
+  "rel_state": "22",
+  "rel_ind": "d-17040384",
+  "createdAt": "2005-12-28T00:00:00.000Z",
+  "createdBy": "createdBy.a58g0@example.org",
+  "modifiedAt": "2016-08-25T00:00:00.000Z",
+  "modifiedBy": "modifiedBy.a58g0@example.com"
+}
+
+
+### prtableSet
+# @name prtableSet_PATCH
+PATCH {{server}}/odata/v4/pr/prtableSet/17040384-3c14-473b-9ec4-cb2de7ee1b74
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+{
+  "ID": "17040384-3c14-473b-9ec4-cb2de7ee1b74",
+  "prno": "o-17040384",
+  "item_no": "item_no-17040384",
+  "prvalue":5000,
+  "doc_type": "doc_type-17040384",
+  "requestor": "requestor-17040384",
+  "material": "l-17040384",
+  "qty": 100,
+  "plant": "t-17040384",
+  "pur_org": "g-17040384",
+  "rel_sgr": "r-17040384",
+  "rel_state": "e-17040384",
+  "rel_ind": "d-17040384",
+  "createdAt": "2005-12-28T00:00:00.000Z",
+  "createdBy": "createdBy.a58g0@example.org",
+  "modifiedAt": "2016-08-25T00:00:00.000Z",
+  "modifiedBy": "modifiedBy.a58g0@example.com"
+}
+
+
+### prtableSet
+# @name prtableSet_DELETE
+DELETE {{server}}/odata/v4/pr/prtableSet/17040384-3c14-473b-9ec4-cb2de7ee1b74
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}

@@ -67,7 +67,7 @@ modules:
         - npm run build
       supported-platforms:
         []
-      parameters:
+    parameters:
       config:
         HTML5Runtime_enabled: true
         init_data:
